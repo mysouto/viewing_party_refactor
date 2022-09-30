@@ -1,9 +1,15 @@
 import pytest
+from viewing_party.movie import Movie
 
 def test_1():
     # Arrange
+    title = "It Came from the Stack Trace"
+    genre = "Horror"
+    rating = 3.5
+    host = 'Amy'
 
     # Act
-
+    Amy = Movie(title, genre, rating, host) 
     # Assert
-    pass
+    assert Amy.title == title
+    assert Amy.rating == 3.5
