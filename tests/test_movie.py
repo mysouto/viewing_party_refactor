@@ -9,7 +9,7 @@ def test_1():
     host = 'Amy'
 
     # Act
-    Amy = Movie(title, genre, rating, host) 
+    Amy = Movie(title = title, genre = genre, rating = rating, host = host) 
     # Assert
     assert Amy.title == title
     assert Amy.rating == 3.5
